@@ -1,3 +1,17 @@
-<h2 id='title'>Welcome to Ember.js</h2>
+  <section class="columns two">
 
-{{outlet}}
+    <div class="column">
+      <h3>Markdown</h3>
+      <div class="column-markdown">
+        {{textarea value=text placeholder="Write markdown here"}}
+      </div>
+    </div>
+
+    <div class="column column-html">
+      <h3>HTML</h3>
+      <div class="column-html">
+        {{showdown-addon text}}
+      </div>
+    </div>
+
+  </section>
